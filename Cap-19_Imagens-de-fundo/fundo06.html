@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+                /*
+                    Aqui podemos usar alguns valores:
+                        - auto: O navegador se vira para exibir a imagem (É o padrão)
+                        - px ou %: Tamanho fixo
+                        - contain: Mostra 100% da imagem independente do tamanho, porém pode criar "barras" nas laterais da imagem dependendo do tamanho
+                        - cover: Que irá cortar a imagem, mas preencherá 100% da vh(viewPort)
+                */
+        }
+
+        main {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagens de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolor enim numquam quidem voluptatibus blanditiis provident tempora sequi id consectetur temporibus eos excepturi aperiam dolore, voluptate natus nisi quaerat! Itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime, voluptatem illum nemo debitis minus? Placeat velit ut, optio id, dignissimos accusamus veritatis pariatur aut autem, sunt dolorem voluptates mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis in laboriosam autem aperiam. Laborum soluta itaque nostrum harum, culpa, ut tempore a ipsum pariatur placeat neque nemo iusto. Nesciunt.</p>
+    </main>
+</body>
+</html>
