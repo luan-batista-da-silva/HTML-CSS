@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Imagem de Fundo</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
@@ -13,17 +13,30 @@
             background-repeat: no-repeat;
             background-size: cover;
                 /*
-                    Aqui podemos usar alguns valores:
+                    --> Aqui podemos usar alguns valores:
                         - auto: O navegador se vira para exibir a imagem (É o padrão)
                         - px ou %: Tamanho fixo
                         - contain: Mostra 100% da imagem independente do tamanho, porém pode criar "barras" nas laterais da imagem dependendo do tamanho
                         - cover: Que irá cortar a imagem, mas preencherá 100% da vh(viewPort)
+               
+                --> background-attachment: fixed;
+               
+                    Aqui há duas opções de values:
+                        - scroll: O qual faz com que a tela role juntamente com o rolamento do conteúdo (Padrão)
+                        - fixed: Onde a imagem ficará fixada, de modo que ao rolar a imagem de fundo não rolará junto
+               
+                --> Shorthand - Background
+                        color -> image -> position -> repeat -> [size] -> attachment
+
+                        [OBS].: O size não funciona no shorthand, portanto deve ser colocado do lado de fora, mesmo que esteja especificado assim na documentação
                 */
+                background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+                background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             margin: auto;
             padding: 10px;
             border: 1px solid darkblue;
@@ -34,6 +47,10 @@
 <body>
     <main>
         <h1>Teste de Imagens de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolor enim numquam quidem voluptatibus blanditiis provident tempora sequi id consectetur temporibus eos excepturi aperiam dolore, voluptate natus nisi quaerat! Itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime, voluptatem illum nemo debitis minus? Placeat velit ut, optio id, dignissimos accusamus veritatis pariatur aut autem, sunt dolorem voluptates mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis in laboriosam autem aperiam. Laborum soluta itaque nostrum harum, culpa, ut tempore a ipsum pariatur placeat neque nemo iusto. Nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolor enim numquam quidem voluptatibus blanditiis provident tempora sequi id consectetur temporibus eos excepturi aperiam dolore, voluptate natus nisi quaerat! Itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime, voluptatem illum nemo debitis minus? Placeat velit ut, optio id, dignissimos accusamus veritatis pariatur aut autem, sunt dolorem voluptates mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis in laboriosam autem aperiam. Laborum soluta itaque nostrum harum, culpa, ut tempore a ipsum pariatur placeat neque nemo iusto. Nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolor enim numquam quidem voluptatibus blanditiis provident tempora sequi id consectetur temporibus eos excepturi aperiam dolore, voluptate natus nisi quaerat! Itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime, voluptatem illum nemo debitis minus? Placeat velit ut, optio id, dignissimos accusamus veritatis pariatur aut autem, sunt dolorem voluptates mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis in laboriosam autem aperiam. Laborum soluta itaque nostrum harum, culpa, ut tempore a ipsum pariatur placeat neque nemo iusto. Nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolor enim numquam quidem voluptatibus blanditiis provident tempora sequi id consectetur temporibus eos excepturi aperiam dolore, voluptate natus nisi quaerat! Itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime, voluptatem illum nemo debitis minus? Placeat velit ut, optio id, dignissimos accusamus veritatis pariatur aut autem, sunt dolorem voluptates mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis in laboriosam autem aperiam. Laborum soluta itaque nostrum harum, culpa, ut tempore a ipsum pariatur placeat neque nemo iusto. Nesciunt.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolor enim numquam quidem voluptatibus blanditiis provident tempora sequi id consectetur temporibus eos excepturi aperiam dolore, voluptate natus nisi quaerat! Itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime, voluptatem illum nemo debitis minus? Placeat velit ut, optio id, dignissimos accusamus veritatis pariatur aut autem, sunt dolorem voluptates mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis in laboriosam autem aperiam. Laborum soluta itaque nostrum harum, culpa, ut tempore a ipsum pariatur placeat neque nemo iusto. Nesciunt.</p>
     </main>
 </body>
