@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: normal;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: aliceblue;
+            padding: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.296);
+        }
+
+
+        nav > a {
+            color: black;
+            text-decoration: none;
+            margin: 0px 30px;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        
+        main {
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+            text-align: justify;
+            border-radius: 10px 20px 30px 40px;
+        }
+
+        #assuntos {
+            background-color: blue;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #noticias {
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0;
+        }
+
+        div#bola {
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Existem tags semânticas além das divs -->
+    <header> <!-- Essas tags são vistas como divs mas são semânticas, ou seja, fazer sentido para as buscas -->
+        <h1>Meu Site</h1>
+        <nav> <!-- Funciona como um 'menu' -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esportes e Competições</h2>
+        </section>
+        <section id="noticias">
+            <article>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ut harum maxime vitae tenetur! Sequi blanditiis iste amet explicabo repellendus sint labore provident veniam. Sint id dolor veniam repellat dignissimos.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Luan Batista</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeso com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos Hospedados Localmente</h1>
+    <p>ESte vídeo está hospedado no meu próprio servidor</p>
+    <video width="560" poster="imagens/video-capa-cidade-500.png" controls autoplay loop>
+        <source src="midias/meu-video.mp4" type="video/mp4">
+        <source src="midias/meu-video.mkv" type="video/mp4">
+        <source src="midias/meu-video.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <p>Se utilizarmos essa hospedagem no youtube, usando o video do cliente colocando no youtube o vídeo, usando no site, de modo que o alcance fique melhor, dentro da plataforma de busca do youtube e google.</p>
+    <!-- Podemos utilizar também o Vimeo, o qual pode se escolher se seus vídeos ficam públicos ou privados -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=VODdl3Dq2NUkuO42" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo Videos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/74683600?h=c9891a6557&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

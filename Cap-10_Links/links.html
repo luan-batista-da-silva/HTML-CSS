@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Você pode acessar o <a href="https://www.youtube.com/@CortesdoCasimitoOFICIAL" target="_blank" rel="external">canal do Casimiro</a> no youtube.</p>
+    <!-- 
+        Usando o target="_black", é possível que ao clicar no link ao invés de sobrepor sua aba, o navegador utiliza uma nova aba em branco para abrir o link 
+        O rel="external", indica para o navegador que este link é um do tipo externo
+    -->
+
+    <h1>Usando Links Internos</h1>
+        <!-- Ele fará ligação com outras páginas que estejam dentro do próprio servidor -->
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag-noticias.html" target="_self">página de notícias</a></p>
+    
+    <h1>Links Para Download</h1>
+    <ul>
+        <li><a href="livro/SWEBOK - V3.0.pdf" target="_blank" download="SWEBOK - V3.0.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <!-- Iana - Media Types -> Site para saber tds os tipos que se pode ser lido -->
+        <li><a href="livro/SWEBOK - V3.0.zip" target="_blank" download="SWEBOK - V3.0.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

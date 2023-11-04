@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1" start="4">
+        <!-- Significa que é uma lista do tipo ordenada numérica, que começa no 4, podemos ter a sequência de forma marcada diferentes, com type tendo valor:
+        '1' - Numérico
+        'A' - Letras Maiúsculas
+        'a' - Letras Minúsculas
+        'i' - Romanos Minúculas
+        'I' - Romanos Maiúsculas
+        -->
+        <li>Acordar</li>
+        <li>ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar
+            <!-- O </li> ficou opcional com o surgimento do HTML5 -->
+    </ol>
+
+    <h2>Listas Não Ordenadas</h2>
+    <ul type="circle">
+        <!-- Types: disc circle square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <!-- Funciona da msm forma que as listas ordenadas-->
+    </ul>
+
+    <h2>Juntando listas</h2>
+    <h3>Minhas Linguagens Favoritas</h3>
+        <ol>
+            <li>Antigas</li>
+            <ol type="a">
+                <li>Clipper</li>
+                <li>Visual Basic</li>
+                <li>Delphi</li>
+            </ol>
+            <li>Novas</li>
+                <ol type="a" start="4">
+                    <!-- Memso que a lsita seja em alfanuméricos, o start deve estar em número, ou seja, a posição que deve começar-->
+                    <li>PHP</li>
+                    <li>Phyton</li>
+                    <li>JavaScript</li>
+                    <li>Kotlin</li>
+                </ol>
+        </ol>
+
+    <h3>Meus Jogos Favoritos</h3>
+    <ol>
+        <li>NES</li>
+            <ul>
+                <li>Mario Bros</li>
+                <ul>
+                    <li>Mario Bross 3</li>
+                    <li>Mario: Lost Levels</li>
+                </ul>
+            </ul>
+        <li>SNES</li>
+        <ul>
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de Definição</h2>
+
+    <dl>
+        <dt>HTML</dt> <!-- TERMO -->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd> <!-- DEFINIÇÃO -->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação de desing de um site</dd>
+    </dl>
+</body>
+</html>

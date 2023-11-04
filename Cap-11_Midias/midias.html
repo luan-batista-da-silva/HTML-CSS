@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-b">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplemente aumente e diminue o tamanho de se navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!-- Os sources's têm que ser da menor imagem para a maior, ou seja em ordem crecente de cima para baixo-->
+        <img src="imagens/foto-g.png" alt="Imagem Felxível">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!-- 
+        <audio src="midias/happy-mistake.mp3" autoplay controls></audio>
+
+        MP3 WAV OGG
+    -->
+
+    <audio preload="metadata" controls loop>
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.mp3" type="audio/ogg">
+        <source src="midias/guanacast-33.mp3" type="audio/wav">
+        <!-- Aqui como nas fotos dinâmicas, o navegador tentará carregar de cima para baixo o tipo de arquivos.
+        OBS.: Os arquivos WAV são muito pesados, evitar o uso deles-->
+        <p>Infelizmente seu navegador não consegue reporduzir áudio. </p>
+    </audio>
+    
+</body>
+</html>

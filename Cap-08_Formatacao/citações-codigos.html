@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-Fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript</p>
+        <!-- Com a tag CODE resetva os mesmo espaços para as letras, usando uma fonte monoespaçada. Somente com essa tag, o código n fica com a identação a qual é colocada-->
+<pre>
+    <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        printf(f'O número {num} é PAR')
+    else:
+        printf(f'O número {num} é ÍMPAR')
+    printf('Fim do programa')
+    </code>
+</pre>
+    <!-- Usando a tag pre, o código escrito é impresso no documento junto com sua identação-->
+
+<h2>Citações Simples</h2>
+<p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+    <!-- A tag Q é usada para colocar sitações, pois significa quote, a qual coloca as aspas automaticamente -->
+
+<h2>Citações Completas</h2>
+<p>Segundo Jeff Noble, no seu livro HTML para Leigos: </p>
+<blockquote cite="https://books.google.com.br/books/about/HTML_XHTML_e_CSS_Para_Leigos.html?id=E8ZtDwAAQBAJ&redir_esc=y">
+    A diferença entre elementos inline e um bloco texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+</blockquote>
+    <!-- Ao colocar a tag BLOCKQUOTE juntamente com a propriedade CITE, usando o link de referência, a parte interna do site terá uma referência de onde veio tal citação -->
+
+<h2>Abreviações</h2>
+<p>Estou estudando <abbr title="HyperText Markup Lenguage">HTML</abbr> e <abbr title="Cascading Style Shetts">CSS</abbr>. Estou adorando!</p>
+
+<h2>Texto Invertido</h2>
+<p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+    <!-- Tag BDO, usada para inverter o conteúdo da RTL (direta para esquerda) ou LTR (esquerda para direita) -->
+</body>
+</html>

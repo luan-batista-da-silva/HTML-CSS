@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+/*
+    em HTML é id    = em CSS é #
+    em HTML é class = em CSS é .
+
+    OBS.: id é um seletor único e class pode ser múltiplo, utilizar o mesmo id para mais de um elemente não é considerado o correto pela WCCC
+
+    OBS.2: Existe uma ordem de herança, onde o seletor de elemtno geral é o primeiro a ser colocado, depois temos o seletor class que hera as configurações do seletor geral, e o id é o ultimo a herar as configurações do geral e as que foram sobrepostas pela class, assim sendo o id o ultimo a sobrepor todas
+*/
+body {
+    background-color: rgb(205, 255, 203);
+}
+
+h1 {
+    color: rgb(4, 109, 0);
+}
+
+h1#main-title {
+    text-align: center;
+    background-color: rgb(57, 255, 57);
+} 
+
+h2 {
+    color: rgb(73, 109, 71);
+}
+
+.basico {
+    color: rgb(79, 242, 79);
+}
+
+.intermediario {
+    color: rgb(208, 208, 94);
+}
+
+.avancado {
+    color: red;
+}
+
+.destaque {
+    background-color: rgba(255, 255, 79, 0.638);
+}

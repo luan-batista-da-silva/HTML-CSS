@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-element
+            >   = children
+        */
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::after {
+            content: ' [link]';
+            color: lightgray;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+
+        .especial {
+            background-color: lightcoral;;
+        }
+
+        .especial::after {
+            content: ' ⇐';
+            color: darkred;
+        }
+
+        .especial::before {
+            content: ' ⇒';
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/luan-batista-da-silva" target="_blank" class="especial">Git-hub</a></li>
+        <li><a href="https://www.linkedin.com/in/luan-bd-silva/" target="_blank">Linkedin</a></li>
+        <li><a href="https://www.instagram.com/luan_bdsilva/" target="_blank">Instagram</a></li>
+    </ul>
+
+</body>
+</html>
