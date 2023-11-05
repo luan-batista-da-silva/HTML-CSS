@@ -15,6 +15,10 @@
     --font-destaque: 'Passion One';
 }
 
+html, body {
+    min-height: 100vh;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -27,63 +31,64 @@ body {
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor1), var(--cor2));
     color: white;
-    height: 150px;
     text-align: center;
-    padding: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.218);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.233);
 }
 
 header h1 {
-    padding: 10px;
+    padding-top: 50px;
     font-family: var(--font-destaque);
     font-size: 4em;
-    
+    font-variant: small-caps;
 }
 
 header p {
     font-size: 1.1em;
-    font-weight: bold;
-    padding: 10px;
+    padding-bottom: 50px;
 }
 
-header a {
+header a, footer a {
     text-decoration: none;
     color: white;
-
+    font-weight: bold;
 }
 
-header a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
     color: var(--cor0);
 }
 
 main {
-    line-height: 2em;
     font-family: var(--font-poema);
     font-size: 2em;
     font-weight: bolder;
 }
 
-.estrofe {
-    padding: 40px;
+section {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    line-height: 2em;
+}
+
+section.normal {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.416);
+    padding-left: 40px;
+}
+
+section.imagem {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-left: 30px;
 }
 
 section.img-1 {
     background-image: url('../imagens/cordel-parede.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 25px;
 }
 
 section.img-2 {
     background-image: url('../imagens/escrita-mao.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 25px;
 }
 
 section div {
@@ -98,22 +103,13 @@ section div {
 footer {
     padding: 15px;
     text-align: center;
-    height: 50px;
     background-image: linear-gradient(to top, var(--cor3), var(--cor1), var(--cor2));
     color: white;
     box-shadow: -2px -2px 0px rgba(0, 0, 0, 0.081);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.323);
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-}
 
-footer a:hover {
-    text-decoration: underline;
-    color: var(--cor0);
-}
 
 
 
