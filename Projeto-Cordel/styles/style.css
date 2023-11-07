@@ -39,7 +39,7 @@ header {
 header h1 {
     padding-top: 50px;
     font-family: var(--font-destaque);
-    font-size: 4em;
+    font-size: 8vw;
     font-variant: small-caps;
 }
 
@@ -61,14 +61,14 @@ header a:hover, footer a:hover {
 
 main {
     font-family: var(--font-poema);
-    font-size: 2em;
+    font-size: 3vw;
     font-weight: bolder;
 }
 
 section {
     padding-top: 15vh;
     padding-bottom: 15vh;
-    line-height: 2em;
+    line-height: 5vw;
 }
 
 section.normal {
@@ -97,7 +97,7 @@ section div {
     margin: 10px;
     padding: 10px;
     padding: 10px;
-    width: 400px;    
+    display: inline-block;   
 }
 
 footer {
