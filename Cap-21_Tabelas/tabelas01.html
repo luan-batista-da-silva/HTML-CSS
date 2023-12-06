@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Primeira Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+                /*
+                    Valores de BORDER-COLLAPSE
+                        - separate: Valor padrão onde se tem as bordas separadas minimamente
+                        - collapse: valor onde se mescla as linhas internas da tabela
+                */
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.dado {
+            background-color: yellow;
+        }
+
+        tr.linha {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+    <!-- 
+        Hierarquia de Tabelas
+            TABLE = Tabela
+                TABLE ROW = Linha de tabela
+                    TABLE HEADER = Cabeçalho de Tabela
+                    TABLE DATA = Dado de Tabela
+
+    -->
+    <table>
+        <tr> <!-- Primeira Linha -->
+            <td>A1
+            <td>B1
+            <td>C1
+                <!-- 
+                    OBS.:
+                        - O WCCC permite que as as tag td não necessitam de tags de fechamento> Porém se deve ter atenção pois, se esquecido uma tag de abertura de um próximo dado este se juntará ao anterior
+                        - Outra observação é que se não for repeitado a Hierarquia dos elemento da tabela, o conteúdo inserido ficará do lado de fora da tabela. 
+                -->
+        </tr>
+        <tr class="linha"> <!-- Segunda Linha -->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!-- Terceira Linha -->
+            <td>A3</td>
+            <td class="dado">B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!-- Quarta Linha -->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
