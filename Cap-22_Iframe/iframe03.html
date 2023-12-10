@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 90vw;
+            display: block;
+            margin: auto;
+            border: 2px solid black;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma Escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ratione sapiente ea fugit. Doloribus reiciendis quasi molestias. Delectus repudiandae sunt iure maxime tenetur quibusdam ullam aliquam? Nobis ab eveniet magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda ipsa labore accusantium deserunt error recusandae, aspernatur iste aliquam aperiam neque a? Repellendus atque sunt magni in maxime beatae eos.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina01.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pagina02.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pagina03.html" target="frame">Terceira Página</a></li>
+        <!-- 
+            É possível criar essas navegações internas, é somente adicionar um 'name' dentro do iframe, e além disso deve haver o target no link com o msm name
+        -->
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ratione sapiente ea fugit. Doloribus reiciendis quasi molestias. Delectus repudiandae sunt iure maxime tenetur quibusdam ullam aliquam? Nobis ab eveniet magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda ipsa labore accusantium deserunt error recusandae, aspernatur iste aliquam aperiam neque a? Repellendus atque sunt magni in maxime beatae eos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, assumenda? Delectus atque, eaque amet non quisquam dicta praesentium quasi maxime, reprehenderit quo ducimus officiis nesciunt temporibus id. Rem, nam maxime.</p>
+
+    <iframe src="" frameborder="1" id="tela" name="frame">
+        <p>Infelizmente seu navegador não é compatível com essa ferramenta</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cupiditate quod, tenetur accusamus eum, veritatis inventore vero corporis excepturi neque numquam molestiae omnis architecto? Voluptatem asperiores mollitia sapiente voluptates. Ea.</p>
+</body>
+</html>
