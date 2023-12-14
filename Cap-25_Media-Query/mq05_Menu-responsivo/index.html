@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query - Menu Responsivo</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <!-- 
+            CSS do google fonts, que implementa ícones ao código, basta utilzar a seguinte fórmula:
+            <span class="material-icons">nome_do_icon</span>
+        -->
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#" class="menu-option">Home</a></li>
+                <li><a href="#" class="menu-option">Notícias</a></li>
+                <li><a href="#" class="menu-option">Páginas</a></li>
+                <li><a href="#" class="menu-option">Informações</a></li>
+                <li><a href="#" class="menu-option">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, praesentium dignissimos ducimus voluptas nostrum ipsum mollitia recusandae hic reiciendis temporibus commodi voluptatibus corporis vero sunt unde nobis, atque odit natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, provident numquam expedita accusamus, excepturi laborum aspernatur modi at, tempora corrupti eius. A possimus non sunt ad reiciendis delectus nobis itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis culpa, perferendis doloribus alias mollitia libero reiciendis delectus quo? Tenetur, saepe voluptatibus magni natus animi inventore sunt repellendus eius ducimus? Perspiciatis?
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, praesentium dignissimos ducimus voluptas nostrum ipsum mollitia recusandae hic reiciendis temporibus commodi voluptatibus corporis vero sunt unde nobis, atque odit natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, provident numquam expedita accusamus, excepturi laborum aspernatur modi at, tempora corrupti eius. A possimus non sunt ad reiciendis delectus nobis itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis culpa, perferendis doloribus alias mollitia libero reiciendis delectus quo? Tenetur, saepe voluptatibus magni natus animi inventore sunt repellendus eius ducimus? Perspiciatis?
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, praesentium dignissimos ducimus voluptas nostrum ipsum mollitia recusandae hic reiciendis temporibus commodi voluptatibus corporis vero sunt unde nobis, atque odit natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, provident numquam expedita accusamus, excepturi laborum aspernatur modi at, tempora corrupti eius. A possimus non sunt ad reiciendis delectus nobis itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis culpa, perferendis doloribus alias mollitia libero reiciendis delectus quo? Tenetur, saepe voluptatibus magni natus animi inventore sunt repellendus eius ducimus? Perspiciatis?
+            </p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
