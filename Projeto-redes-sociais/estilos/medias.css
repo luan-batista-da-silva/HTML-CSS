@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    section#dispositivo {
+        background: url('../imagens/frame-tablet.png');
+        
+        height: 398px;
+        width: 550px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section#dispositivo {
+        background: url('../imagens/frame-laptop.png');
+
+        height: 480px;
+        width: 720px;
+    }
+
+    
+}
+
+@media screen and (min-width: 992px){
+    section#dispositivo {
+        background: url('../imagens/frame-desktop.png');
+
+        height: 800px;
+        width: 800px;
+    }
+}
