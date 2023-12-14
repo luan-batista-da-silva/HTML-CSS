@@ -7,10 +7,17 @@
 
     menu {
         display: block;
+        padding: 7px;
+        font-weight: bold;
     }
 
     menu > ul > li {
         display: inline-block;
+    }
+
+    menu > ul > li > a {
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.222);
     }
 
     main {
