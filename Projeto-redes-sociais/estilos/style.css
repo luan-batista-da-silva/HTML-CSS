@@ -11,6 +11,16 @@ body {
     margin-top: 10px;
 }
 
+section > iframe#tela {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -49.5%);
+
+    height: 449px;
+    width: 255px;
+}
+
 section#dispositivo {
     position: absolute;
     background: url('../imagens/frame-iphone.png') no-repeat;
