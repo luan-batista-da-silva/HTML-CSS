@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulários</title>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.js" method="get">
+        
+        <p>
+            <label for="i_num">Número: </label>
+            <input type="range" name="num" id="i_num" min="0" max="10" value="5" oninput="i_val.innerHTML = Number(i_num.value)"><br>
+            <output id="i_val">5</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" onclick="i_val.innerHTML = 5">
+        </p>
+    </form>
+</body>
+</html>
