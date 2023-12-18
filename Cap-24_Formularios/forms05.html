@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs Radio e Checkbox</title>
+</head>
+<body>
+    <h1>Testando Radio Button e Checkbox</h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+        
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="i_sex-masc"><label for="i_sex-masc">Masculino</label><br>
+                <input type="radio" name="sexo" id="i_sex-fem" checked><label for="i_sex-fem">Feminino</label>
+                <!--
+                    Na Input RADIO deve se colocar o atributo NAME exatamente igual para todas as altenativas, para que seja possível trocar após marcar uma, assim evitando marcar e n poder desmarcar mais.
+
+                    OBS.: Ao colocar o atributo CHECKED nos botões de radio so pode ser colocar em um, se colocado em mais de um ele marcará o último.
+                        Para o checkbox é possível ter mais de um marcado
+                -->
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p>
+                <input type="checkbox" name="esport-fut" id="i_esport-fut"><label for="i_esport-fut">Futebol</label> <br>
+                <input type="checkbox" name="esport-bask" id="i_esport-bask"><label for="i_esport-bask">Basquete</label> <br>
+                <input type="checkbox" name="esport-handebol" id="i_esport-handbol"><label for="i_esport-handbol">Handebol</label> <br>
+                <input type="checkbox" name="esport-volei" id="i_esport-volei"><label for="i_esport-volei">Volei</label> <br>
+            </p>
+        </fieldset>
+        
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
