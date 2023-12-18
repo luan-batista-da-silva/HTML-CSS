@@ -11,12 +11,32 @@
     </style>
 </head>
 <body>
+    <!--
+        MÉTODOS DE ENVIO DE FORMULÁRIO
+            - GET -> É o método padrão de envio de formulário, ou seja, aquele que coloca as informações na URL
+                - Aqui a URL gerada após o formulário pode ser compartilhada
+                - Enviando por GET pode ser até 3000 Bytes (ou seja aprox 3000 letras)
+            - POST -> Os dados não aparecem na URL, porém é possível acessá-los e os visualizar de outra forma, obsevando os headers das requisições no devTools
+            - Proteção de dados -> ESTUDAR https
+    -->
     <h1>Meu Primeiro Formulário</h1>
-    <form autocomplete="off" action="cadastro.php">
-        <!-- Pode ser utilizado para tirar o autocomplete do input -->
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="Sobrenome" id="sobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+    <form autocomplete="off" action="cadastro.js">
+        <!-- A propiedade 'autocomplete' Pode ser utilizado para tirar o autocomplete do input -->
+        
+        <p>
+            <label for="i_nome">Nome:</label> 
+            <input type="text" name="nome" id="i_nome">
+            <!-- 
+                Os atributos name são utilizados com maior relevância em php, os id são utilizados com maior relevância no js
+            -->
+        </p>
+        <p>
+            <label for="i_sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="i_sobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
     </form>
 </body>
 </html>
