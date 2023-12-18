@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Formulários</title>
+</head>
+<body>
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <div>
+            <p>
+                <label for="i-nome">Nome: </label>
+                <input type="text" name="nome" id="i-nome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="i-media">Média: </label>
+                <input type="number" name="media" id="i-media" min="0" max="10" step="0.1" placeholder="0 a 10" required value="5">
+                <!--
+                    ATRIBUTOS PARA CAIXA NUMÉRICA
+                        - min -> Define o mínimo permitido na caixa numérica
+                        - max -> Define o máximo permitido na caixa numérica
+                        - step -> Define de quanto em quanto cada número cresce dentro da caixa (padrão de 1 em 1)
+                        - placeholder -> Pode colocar letras, porém a caixa numérica só aceita números ao digitar na caixa
+                        - value -> Coloca um valor pré-estabelecido na caixa, porém retira o placeholder que estaria ao fundo
+                -->
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="i-mes">Período Letivo: </label>
+                <input type="month" name="mes" id="i-mes" value="2023-12">
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="i-dia">Dia da Prova: </label>
+                <input type="date" name="dia" id="i-dia">
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="i-hora">Horário da Prova: </label>
+                <input type="time" name="hora" id="i-hora" value="12:00">
+            </p>
+        </div>
+        <div>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </div>
+        <!--
+            Os values que são mutáveis, como hora e data atuais, não precisam ser atualizados na mão. É possível criar scripts em JS para atualizar isso automaticamente.
+        -->
+    </form>
+</body>
+</html>
