@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="i-nome">Nome: </label>
+                    <input type="text" name="nome" id="i-nome">
+                </p>
+                <p>
+                    <label for="i-email">Email: </label>
+                    <input type="email" name="email" id="i-emails" autocomplete="email" required>
+                    <!--
+                        Essa input n verifica se realmente é um email válido. Somente verifica se é tem um @, portando envia mesmo se não existir
+                    -->
+                </p>
+                <p>
+                    <label for="i-fone">Telefone: </label>
+                    <input type="tel" name="fone" id="i-fone" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(XX) XXXXX-XXXX"> <!-- Outra forma: [0-9]{4,5}-[0-9]{4} -->
+                    <!--
+                        ATRIBUTOS PARA TEL
+                            - pattern -> Pode se especificar os dígitos que se vão ler e como deve ser o formato.
+                                - ^ -> Início do pattern
+                                - $ -> Final do pattern
+                                - Especificação de caracteres:
+                                    - \d{...}\ -> Podemos colocar os caracteres aceitos dessa forma. Especificando quais são lidos dentro das {}. Se coloca a quantidade de dígitos a se inserida. Podendo separar por vírgulas se poder ser mais de um valor
+                                    - [] -> Especificação por intervalo. [0-9] dessa maneira.
+                                    - {} (fora do \d\) -> É a forma que temos para expecificar a quanidade de dígitos naquele intervalo
+                                    - OBS.: Podemos colocar caracteres fora de tudo, mas dentro dos marcadores de início e final do pattern para especificar o formato.
+                    -->
+                    <!--
+                        ========================
+                        Estudar mais sobre RegEx
+                        ========================
+                    -->
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        
+    </form>
+</body>
+</html>
