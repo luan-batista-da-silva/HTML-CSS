@@ -6,6 +6,7 @@
     <title>Projeto Tela de Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/medias.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -15,17 +16,21 @@
         <div id="formulario">
             <h1>Login</h1>
             <p>Seja bem vindo(a) novamente! Faça o login para acessar sua conta e realizar as configurações de seu ambiente!</p>
-            <form action="scripts/login.js" method="post">
-                <p>
-                    <input type="email" name="email" id="i_email">
-                </p>
-                <p>
-                    <input type="password" name="senha" id="i_senha">
-                </p>
-                <p>
-                    <input type="submit" value="Entrar" id="button-entrar">
-                </p>
-                
+            <form action="scripts/login.js" method="post" autocomplete="on">
+                <div class="campo">
+                    <span class="material-icons">person</span>
+                    <input type="email" name="login" id="i_login" placeholder="Login" autocomplete="email" required maxlength="30">
+                    <label for="i_login">Login</label>
+                </div>
+                <div class="campo">
+                    <span class="material-icons">vpn_key</span>
+                    <input type="password" name="senha" id="i_senha" placeholder="Senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                    <label for="i_senha">Senha</label>
+                </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">
+                        Esqueci a Senha<span class="material-icons">mail</span>
+                    </a>
             </form>
         </div>
     </section>  
