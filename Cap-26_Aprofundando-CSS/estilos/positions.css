@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*
+    PROPRIEDADE POSITION
+        - Static -> É o padrão de toda tag HTML vir com esse atributo (Parado onde ele está)
+        - Relative -> É o posicionamento relativo a posição inicial de onde eles estava.
+*/
+
+div#container {
+    display: inline-block;
+    background-color: blue;
+    width: 100vw;
+    height: 400px;
+}
+
+#div1 {
+    position: relative;
+    left: 20px;
+    background-color: yellow;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+
+#div2 {
+    background-color: white;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+
+#div3 {
+    background-color: red;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}

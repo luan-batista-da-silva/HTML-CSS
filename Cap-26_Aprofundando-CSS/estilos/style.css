@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* 
+-> TAGS DE DISPLAY > BLOCK
+    - div
+    - h1 até h6
+    - p
+    - form
+    - header
+    - footer
+    - section
+-> TAGS DE DISPLAY > INLINE
+    - a
+    - span
+    - img
+*/
+
+.borda {
+    border: 1px solid red;
+}
+
+li {
+    display: inline;
+    width: 100px;
+        /* 
+            Ao transformar para display: inline, eles entendem que a tag passa a ter a propriedade de uma palavra normal
+            Esse display entende que vai ficar tudo na mesma linha e o que vai determinar tamnho e outras propriedades como largura e altura é o conteúdo dentro dele. Por isso não respeita comandos como width e etc...
+        */
+}
+
+li#azul {
+    background-color: blue;
+}
+
+li#rosa {
+    background-color: pink;
+}
+
+li#verde {
+    background-color: green;
+}
+
+li.linha-bloco {
+    display: inline-block;
+    width: 280px;
+    height: 500px;
+}
